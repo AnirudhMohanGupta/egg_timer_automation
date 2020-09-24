@@ -34,19 +34,27 @@ Run Test from Command Line
  "mvn clean install" command triggers the jar packaging
  
 
- **dependencies**
+ **Dependencies**
  
  Inside the dependencies tag in pom.xml i have added following dependency
+ 
  1.selenium-java
+ 
  2.Cucumber-Java (This will indicate Maven, which Cucumber files are to be downloaded from the central repository to the local repository.).
+ 
  3.Cucumber-JUnit (This will indicate Maven, which Cucumber JUnit files are to be downloaded from the central repository to the local repository.).
+ 
  **Highlights**
  1.Used Java Collections and Stream API for storing and managing timer information retrieved during test execution.
+ 
  2.Cucumber reads the code written in plain English text (Language Gherkin) in the egg timer feature file .
+ 
  3.cucumber-reporting for preparing html reports.
+ 
  4.Due to simple test script architecture of this cucumber framework, It provides code reusability.
  
 **Improvements**
+
 Due to Time Constraint have not Implemented Browser Alert accept/dismiss logic when timer finishes after executing all assert statement in a while loop.
  
 **Any bugs? **
