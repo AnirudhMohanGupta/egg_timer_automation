@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="1" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="1" time="48.158288">
+<testcase classname="Validate count down functionality from http://e.ggtimer.com/" name="Count down functionality Test Scenario" time="48.158288">
+<failure message="org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Time Expired!}&#10;  (Session info: chrome=85.0.4183.121): Time Expired!&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'Anirudhs-MacBook-Air.local', ip: '2409:4043:2c83:6774:b472:3646:a22f:6353%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '1.8.0_241'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.121, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: /var/folders/9t/f5v0yk0x1pq...}, goog:chromeOptions: {debuggerAddress: localhost:52356}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: ignore, webauthn:virtualAuthenticators: true}&#10;Session ID: d4e31f9fbe6d324881aed1050865e574&#10;*** Element info: {Using=xpath, value=//h2[@id='progressText']}&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)&#10;&#9;at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)&#10;&#9;at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)&#10;&#9;at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)&#10;&#9;at org.openqa.selenium.By$ByXPath.findElement(By.java:353)&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)&#10;&#9;at TimerProgressPage.validate_on_clicking_Go_Button_countdown_is_happening_every_second_and_remaining_time_decreases_in_one_second_increments(TimerProgressPage.java:49)&#10;&#9;at ✽.Then Validate on clicking Go Button countdown is happening every second and remaining time decreases in one-second increments(src/test/resources/eggtimer.feature:8)&#10;"><![CDATA[Given User navigates to eggtimer website....................................passed
+When title of home page is "E.gg Timer - a simple countdown timer"..........passed
+Then User enters countdown time as "25 Seconds" in Start a time text section and click on Go Button.passed
+Then Validate on clicking Go Button countdown is happening every second and remaining time decreases in one-second increments.failed
+Then Close eggtimer Application.............................................skipped
+
+StackTrace:
+org.openqa.selenium.UnhandledAlertException: unexpected alert open: {Alert text : Time Expired!}
+  (Session info: chrome=85.0.4183.121): Time Expired!
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'Anirudhs-MacBook-Air.local', ip: '2409:4043:2c83:6774:b472:3646:a22f:6353%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.6', java.version: '1.8.0_241'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 85.0.4183.121, chrome: {chromedriverVersion: 85.0.4183.87 (cd6713ebf92fa..., userDataDir: /var/folders/9t/f5v0yk0x1pq...}, goog:chromeOptions: {debuggerAddress: localhost:52356}, javascriptEnabled: true, networkConnectionEnabled: false, pageLoadStrategy: normal, platform: MAC, platformName: MAC, proxy: Proxy(), setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: ignore, webauthn:virtualAuthenticators: true}
+Session ID: d4e31f9fbe6d324881aed1050865e574
+*** Element info: {Using=xpath, value=//h2[@id='progressText']}
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:120)
+	at org.openqa.selenium.remote.http.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:49)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:158)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:83)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:552)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:323)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:428)
+	at org.openqa.selenium.By$ByXPath.findElement(By.java:353)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:315)
+	at TimerProgressPage.validate_on_clicking_Go_Button_countdown_is_happening_every_second_and_remaining_time_decreases_in_one_second_increments(TimerProgressPage.java:49)
+	at ✽.Then Validate on clicking Go Button countdown is happening every second and remaining time decreases in one-second increments(src/test/resources/eggtimer.feature:8)
+]]></failure>
+</testcase>
+</testsuite>
